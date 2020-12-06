@@ -1,0 +1,31 @@
+{
+  "name": "TODO-Change-this",
+  "version": "1.0.0",
+  "description": "TODO-Add-this",
+  "main": "index.js",
+  "repository": "TODO-Change-this",
+  "author": "Austin Piel <apiel51@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "typescript": "^4.1.2"
+  },
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.10",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "husky": "^4.3.4",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && yarn lint"
+    }
+  }
+}
